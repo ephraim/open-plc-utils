@@ -87,6 +87,7 @@
 #define SLAC_SECURITY_PUBLIC_KEY 0x01
 
 #define SLAC_RUNID_LEN 8
+#define SLAC_RSVD_LEN 8
 #define SLAC_UNIQUE_ID_LEN 17
 #define SLAC_RND_LEN 16
 #define SLAC_NID_LEN 7
@@ -301,6 +302,7 @@ typedef struct __packed cm_mnbc_sound_indicate
 		uint8_t SenderID [SLAC_UNIQUE_ID_LEN];
 		uint8_t CNT;
 		uint8_t RunID [SLAC_RUNID_LEN];
+		uint8_t RSVD [SLAC_RSVD_LEN];
 		uint8_t RND [SLAC_UNIQUE_ID_LEN];
 	}
 	MSVarField;
