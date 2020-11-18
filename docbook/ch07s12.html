@@ -88,7 +88,7 @@ This value is ignored when RESP_TYPE=0.
 				</span></dt><dd><p>
 The vehicle identification number.
 The PEV-HLE sends this value to the EVSE-HLE in <code class="constant">CM_SLAC_MATCH.REQ</code> <code class="constant">MatchVarField.PEV_ID</code> field.
-The default is <code class="constant">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</code> but is can be changed using <span class="quote">“<span class="quote">vehicle identifier =</span>”</span> in profile <code class="filename">pev.ini</code>.
+The default is <code class="constant">0000000000000000000000000000000000</code> but is can be changed using <span class="quote">“<span class="quote">vehicle identifier =</span>”</span> in profile <code class="filename">pev.ini</code>.
 The MatchVarField portion of the message forms the transaction record and may be encrypted.
 					</p></dd><dt><a name="session-PEV_MAC"></a><span class="term">
 				session.PEV_MAC
